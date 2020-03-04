@@ -7,6 +7,6 @@ FIVE_PRICE = 0
 # asks for the age of the customer
 age = int(input("What is your age sir? "))
 if age >= EIGHTEEN_PRICE:
-    print("Okey dokey your price do be {} dollars my good man.".format(EIGHTEEN_PRICE))
+    print("Okey dokey your price is {} dollars my good man.".format(age * EIGHTEEN_PRICE))
 
 

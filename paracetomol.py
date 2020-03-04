@@ -3,8 +3,14 @@ ADULT_DOSAGE = 500
 MILLIGRAMS_PER_KG = 10
 
 # asks for age and weight of patient
-age = int(input("What is the patient's age? "))
-weight = int(input("What is the patient's weight? "))
+try:
+    age = int(input("What is the patient's age? "))
+except:
+    print("That's not a valid input.")
+try:
+    weight = int(input("What is the patient's weight? "))
+except:
+    print("That's not a valid input.")
 
 # if the patient is 12 or over it is 500 mg paracetamol tablets
 if age >= AGE_BOUNDARY:
